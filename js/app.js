@@ -37,6 +37,6 @@ app.config(function ($mdThemingProvider) {
       'hue-3': '900'
     })
     .accentPalette('grey', {
-      'default': '200' // use shade 200 for default, and keep all other shades the same
+      'default': '900' // use shade 200 for default, and keep all other shades the same
     });
 })
