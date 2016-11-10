@@ -1,7 +1,49 @@
-var app = angular.module('robertJensen', ['ngMaterial'])
+var app = angular.module('robertJensen', ['firebase', 'ui.router', 'ui.grid', 'ui.grid.resizeColumns', 'ngMaterial', 'ngAria', 'ngAnimate', 'ngMessages', 'ui.grid.importer', 'ui.grid.selection'])
 
 .controller('appCtrl', function ($scope) {
 
+})
+
+app.config(function ($stateProvider, $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('/home')
+
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'js/home/homePage.html',
+      controller: 'homePageCtrl'
+    })
+    .state('about', {
+      url: '/about-us',
+      templateUrl: 'js/about/aboutPage.html',
+      controller: 'aboutPageCtrl',
+    })
+  .state('philospohy', {
+      url: '/philosophy',
+      templateUrl: 'js/philosphy/philosophyPage.html',
+      controller: 'philosophyPageCtrl',
+    })
+  .state('ties', {
+      url: '/ties',
+      templateUrl: 'js/ties/tiesPage.html',
+      controller: 'tiesPageCtrl',
+    })
+  .state('pocketSquares', {
+      url: '/pocket-squares',
+      templateUrl: 'js/pocketSquares/pocketSquaresPage.html',
+      controller: 'pocketSquaresPageCtrl',
+    })
+  .state('retailers', {
+      url: '/retailers',
+      templateUrl: 'js/retailers/retailersPage.html',
+      controller: 'retailersPageCtrl',
+    })
+  .state('contact', {
+      url: '/contact-us',
+      templateUrl: 'js/contact/contactPage.html',
+      controller: 'contactPageCtrl',
+    })
 })
 
 app.config(function ($mdThemingProvider) {

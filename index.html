@@ -13,29 +13,36 @@
 
 <body>
   <div ng-controller="appCtrl">
-    <md-toolbar class="md-hue-1 md-tall">
+    <md-toolbar class='md-hue-1'>
       <div class="md-toolbar-tools">
         <span flex></span>
-
         <md-button aria-label="User">
           </br>
           <img src="images/logo.png"></md-icon>
         </md-button>
+        </md-menu>
       </div>
-      </br>
-      <md-nav-bar class='text' md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-        <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
-        <md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
-        <md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
-        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
-      <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
-      <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
-      -->
-      </md-nav-bar>
     </md-toolbar>
   </div>
+  </br>
+  <div class='container'>
+    <div md-theme='default' class='jumbotron'>
+      <md-tabs class='md-accent md-hue-3'>
+        <md-tab md-active label='home' ui-sref="home"></md-tab>
+        <md-tab label='about' ui-sref="about"></md-tab>
+        <md-tab label='philosophy' ui-sref="philosophy"></md-tab>
+        <md-tab label='ties' ui-sref="ties"></md-tab>
+        <md-tab label='pocketSquares' ui-sref="pocketSquares"></md-tab>
+        <md-tab label='retailers' ui-sref="retailers"></md-tab>
+        <md-tab label='contact' ui-sref="contact"></md-tab>
+      </md-tabs>
+      <md-tab-body ui-view></md-tab-body>
 
-  Hello World
+
+    </div>
+
+
+  </div>
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -50,7 +57,15 @@
   <script src="bower_components/angular-messages/angular-messages.js"></script>
   <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
+  <script src="js/about/aboutPageCtrl.js"></script>
+  <script src="js/contact/contactPageCtrl.js"></script>
+  <script src="js/home/homePageCtrl.js"></script>
+  <script src="js/mainCtrl.js"></script>
+  <script src="js/mainService.js"></script>
+  <script src="js/philosophy/philosophyPageCtrl.js"></script>
+  <script src="js/pocketSquares/pocketSquaresPageCtrl.js"></script>
+  <script src="js/retailers/retailersPageCtrl.js"></script>
+  <script src="js/ties/tiesPageCtrl.js"></script>
 </body>
 
 </html>
