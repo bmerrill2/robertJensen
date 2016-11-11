@@ -20,25 +20,25 @@
           </br>
           <img src="images/logo.png"></md-icon>
         </md-button>
-        </md-menu>
       </div>
+      <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+        <md-nav-item md-nav-sref="home" name="home">home</md-nav-item>
+        <md-nav-item md-nav-sref="about" name="about">about</md-nav-item>
+        <md-nav-item md-nav-sref="philosophy" name="philosophy">philosophy</md-nav-item>
+        <md-nav-item md-nav-sref="ties" name="ties">ties</md-nav-item>
+        <md-nav-item md-nav-sref="pocket squares" name="pocket squares">pocket squares</md-nav-item>
+        <md-nav-item md-nav-sref="retailers" name="retailers">retailers</md-nav-item>
+        <md-nav-item md-nav-sref="contact" name="contact">contact</md-nav-item>
+      </md-nav-bar>
     </md-toolbar>
   </div>
   </br>
   <div class='container'>
-    <div md-theme='default' class='jumbotron'>
-      <md-tabs class='md-accent md-hue-3'>
-        <md-tab md-active label='home' ui-sref="home"></md-tab>
-        <md-tab label='about' ui-sref="about"></md-tab>
-        <md-tab label='philosophy' ui-sref="philosophy"></md-tab>
-        <md-tab label='ties' ui-sref="ties"></md-tab>
-        <md-tab label='pocketSquares' ui-sref="pocketSquares"></md-tab>
-        <md-tab label='retailers' ui-sref="retailers"></md-tab>
-        <md-tab label='contact' ui-sref="contact"></md-tab>
-      </md-tabs>
+    <div md-theme='default' class='jumbotron color'>
+  
       <md-tab-body ui-view></md-tab-body>
 
-
+      <div class='jensen'>ROBERT JENSEN</div>
     </div>
 
 

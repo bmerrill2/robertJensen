@@ -2,11 +2,19 @@
   color: #B3BBBF;
 }
 
-.footer {
-  color: #E2E2DE;
-}
-
-.jumbotron {
+.color {
     margin-top: 10px;
     height: auto;
+    background-color: #F3F2ED;
+}
+
+.jensen {
+  color: #E2E2DE;
+  font-size: 100px;
+  font-size-adjust: auto;
+  justify-content: center;
+}
+
+.slider {
+  justify-content: center;
 }

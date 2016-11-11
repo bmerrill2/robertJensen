@@ -54,7 +54,7 @@ app.config(function ($mdThemingProvider) {
     '300': 'E0E0E0',
     '400': 'B3BBBF',
     '500': '9E9E9E',
-    '600': '9D9DA1',
+    '600': 'ECECE8',
     '700': '616161',
     '800': '424242',
     '900': '57585B',
