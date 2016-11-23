@@ -16,27 +16,29 @@
 <body>
   <div ng-controller="appCtrl">
     <nav class="navbar navbar-default">
-      <a class="navbar-brand navbar-right logo" href="#">
-        <img alt="Robert Jensen Neckwear" src="images/logo.png">
-      </a>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active" label="home"><a ui-sref='home'>HOME</a></li>
-          <li label="about"><a ui-sref='about'>ABOUT</a></li>
-          <li label="philosophy"><a ui-sref='philosophy'>PHILOSOPHY</a></li>
-          <li label="ties"><a ui-sref='ties'>TIES</a></li>
-          <li label="pocket squares"><a ui-sref='pocketSquares'>POCKET SQUARES</a></li>
-          <li label="retailers"><a ui-sref='retailers'>RETAILERS</a></li>
-          <li label="contact"><a ui-sref='contact'>CONTACT</a></li>
-        </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-right logo" href="#">
+          <img alt="Robert Jensen Neckwear" src="images/logo.png">
+        </a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jensenNavbar" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="jensenNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref='home'>HOME</a></li>
+            <li><a ui-sref='about'>ABOUT</a></li>
+            <li><a ui-sref='philosophy'>PHILOSOPHY</a></li>
+            <li><a ui-sref='ties'>TIES</a></li>
+            <li><a ui-sref='pocketSquares'>POCKET SQUARES</a></li>
+            <li><a ui-sref='retailers'>RETAILERS</a></li>
+            <li><a ui-sref='contact'>CONTACT</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </div>
