@@ -19,9 +19,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'js/about/aboutPage.html',
       controller: 'aboutPageCtrl',
     })
-  .state('philospohy', {
+  .state('philosophy', {
       url: '/philosophy',
-      templateUrl: 'js/philosphy/philosophyPage.html',
+      templateUrl: 'js/philosophy/philosophyPage.html',
       controller: 'philosophyPageCtrl',
     })
   .state('ties', {
@@ -82,3 +82,8 @@ app.config(function ($mdThemingProvider) {
       'default': '900' // use shade 200 for default, and keep all other shades the same
     });
 })
+
+$(".nav a").on("click", function(){
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});

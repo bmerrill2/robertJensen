@@ -13,8 +13,24 @@
   font-size: 100px;
   font-size-adjust: auto;
   justify-content: center;
+  text-align: center;
 }
 
-.slider {
-  justify-content: center;
+.navbar {
+  min-height: 100px;
+}
+
+.logo {
+  padding-top: 0px;
+  padding-left: 5px;
+}
+
+#myNavbar {
+  position: relative;
+}
+
+#myNavbar .nav {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -49px;
 }
