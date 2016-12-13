@@ -1,0 +1,128 @@
+<!doctype html>
+<html ng-app="robertJensen">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROBERT JENSEN | Ties and Pocket Squares</title>
+  <link rel='stylesheet' type='text/css' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.css">
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="slider.css" rel="stylesheet">
+  <link type="text/css" href="style.css" rel='stylesheet'>
+</head>
+
+<body>
+  <div ng-controller="appCtrl">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-right logo" href="#">
+          <img alt="Robert Jensen Neckwear" src="images/logo.png">
+        </a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jensenNavbar" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="jensenNavbar">
+          <ul class="nav navbar-nav">
+            <li><a ui-sref='home'>HOME</a></li>
+            <li><a ui-sref='about'>ABOUT</a></li>
+            <li><a ui-sref='philosophy'>PHILOSOPHY</a></li>
+            <li class="active"><a href="ties.html">TIES</a></li>
+            <li><a ui-sref='pocketSquares'>POCKET SQUARES</a></li>
+            <li><a ui-sref='retailers'>RETAILERS</a></li>
+            <li><a ui-sref='contact'>CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </br>
+  <div class='container'>
+    <div md-theme='default'>
+
+      <div class="carousel slide" id="tie-slider" data-ride="carousel" data-interval="1000">
+  <!-- Indicators -->
+  
+  <ol class="carousel-indicators">
+    <li data-target="#tie-slider" data-slide-to="0" class="active"></li>
+    <li data-target="#tie-slider" data-slide-to="1"></li>
+    <li data-target="#tie-slider" data-slide-to="2"></li>
+  </ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/tie1.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie2.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie3.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie4.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie5.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie6.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie7.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie8.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie9.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie10.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie11.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie12.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie13.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie14.gif" alt="Robert Jensen Necktie">
+    </div>
+    <div class="item">
+      <img src="images/tie15.gif" alt="Robert Jensen Necktie">
+    </div>
+    
+  </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+</body>
+
+</html>
