@@ -2099,7 +2099,7 @@ function setupModuleLoader(window) {
         var moduleInstance = {
           // Private state
           _invokeQueue: invokeQueue,
-          _configBlocks: configBlocks,
+          configBlocks: configBlocks,
           _runBlocks: runBlocks,
 
           /**
@@ -4617,7 +4617,7 @@ function createInjector(modulesToLoad, strictDi) {
           moduleFn = angularModule(module);
           runBlocks = runBlocks.concat(loadModules(moduleFn.requires)).concat(moduleFn._runBlocks);
           runInvokeQueue(moduleFn._invokeQueue);
-          runInvokeQueue(moduleFn._configBlocks);
+          runInvokeQueue(moduleFn.configBlocks);
         } else if (isFunction(module)) {
             runBlocks.push(providerInjector.invoke(module));
         } else if (isArray(module)) {

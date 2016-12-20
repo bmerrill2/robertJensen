@@ -714,7 +714,7 @@ function MdPanelService($rootElement, $rootScope, $injector, $window) {
   };
 
   /** @private {!Object} */
-  this._config = {};
+  this.config = {};
 
   /** @private @const */
   this._$rootElement = $rootElement;
@@ -768,14 +768,14 @@ MdPanelService.prototype.create = function(config) {
   }
 
   // If no ID is set within the passed-in config, then create an arbitrary ID.
-  this._config = {
+  this.config = {
     id: config.id || 'panel_' + this._$injector.get('$mdUtil').nextUid(),
     scope: this._$rootScope.$new(true),
     attachTo: this._$rootElement
   };
-  angular.extend(this._config, this._defaultConfigOptions, config);
+  angular.extend(this.config, this._defaultConfigOptions, config);
 
-  var panelRef = new MdPanelRef(this._config, this._$injector);
+  var panelRef = new MdPanelRef(this.config, this._$injector);
   this._trackedPanels[config.id] = panelRef;
 
   return panelRef;
@@ -1271,7 +1271,7 @@ MdPanelRef.prototype._createPanel = function() {
                 getElement(self.config['attachTo']));
           }
 
-          self._configureTrapFocus();
+          self.configureTrapFocus();
           self._addStyles().then(function() {
             resolve(self);
           }, reject);
@@ -1430,9 +1430,9 @@ MdPanelRef.prototype._createBackdrop = function() {
  * @private
  */
 MdPanelRef.prototype._addEventListeners = function() {
-  this._configureEscapeToClose();
-  this._configureClickOutsideToClose();
-  this._configureScrollListener();
+  this.configureEscapeToClose();
+  this.configureClickOutsideToClose();
+  this.configureScrollListener();
 };
 
 
@@ -1452,7 +1452,7 @@ MdPanelRef.prototype._removeEventListeners = function() {
  * Setup the escapeToClose event listeners.
  * @private
  */
-MdPanelRef.prototype._configureEscapeToClose = function() {
+MdPanelRef.prototype.configureEscapeToClose = function() {
   if (this.config['escapeToClose']) {
     var parentTarget = getElement(this.config['attachTo']);
     var self = this;
@@ -1483,7 +1483,7 @@ MdPanelRef.prototype._configureEscapeToClose = function() {
  * Setup the clickOutsideToClose event listeners.
  * @private
  */
-MdPanelRef.prototype._configureClickOutsideToClose = function() {
+MdPanelRef.prototype.configureClickOutsideToClose = function() {
   if (this.config['clickOutsideToClose']) {
     var target = this.panelContainer;
     var sourceElem;
@@ -1526,7 +1526,7 @@ MdPanelRef.prototype._configureClickOutsideToClose = function() {
  * Configures the listeners for updating the panel position on scroll.
  * @private
 */
-MdPanelRef.prototype._configureScrollListener = function() {
+MdPanelRef.prototype.configureScrollListener = function() {
   var updatePosition = angular.bind(this, this._updatePosition);
   var debouncedUpdatePosition = this._$$rAF.throttle(updatePosition);
   var self = this;
@@ -1552,7 +1552,7 @@ MdPanelRef.prototype._configureScrollListener = function() {
  * panel. When shift-tabbing, the focus will stick in place.
  * @private
  */
-MdPanelRef.prototype._configureTrapFocus = function() {
+MdPanelRef.prototype.configureTrapFocus = function() {
   // Focus doesn't remain instead of the panel without this.
   this.panelEl.attr('tabIndex', '-1');
   if (this.config['trapFocus']) {
