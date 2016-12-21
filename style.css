@@ -70,3 +70,23 @@ body {
 .owl-nav .owl-next {
   right: -20px;
 }
+
+.container {
+   background-color: #ECECE8;
+}
+
+.modalImage {
+  height: 475px;
+}
+
+.modal-content {
+  background-color: #ECECE8;
+}
+
+.modal-header {
+  border: 0px;
+}
+
+.modal-footer {
+  border: 0px;
+}
