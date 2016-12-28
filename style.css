@@ -151,17 +151,18 @@ body {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
+  max-width: 100%;
+  background-color: rgb(236, 236, 232);
 }
 
 .icons {
   text-align: center;
   font-size: 15px;
+  background-color: rgb(236, 236, 232);
 }
 
 .centered {
   text-align: center;
+  background-color: rgb(236, 236, 232);
 }
 
-img {
-  max-width: 100%;
-}
