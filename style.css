@@ -1,11 +1,18 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: rgb(130, 131, 131);
+  background-color: rgb(236,236,232);
+}
+
 .text {
   color: #B3BBBF;
 }
 
 .color {
-    margin-top: 10px;
-    height: auto;
-    background-color: #F3F2ED;
+  margin-top: 10px;
+  height: auto;
+  background-color: #F3F2ED;
 }
 
 .jensen {
@@ -35,10 +42,6 @@
   margin-bottom: -49px;
 }
 
-body {
-  background-color: #ECECE8;
-}
-
 .centered {
   text-align: center;
 }
@@ -51,6 +54,7 @@ body {
 .owl-nav {
   display: none;
 }
+
 .owl-carousel:hover .owl-nav {
   display: block;
 }
@@ -61,18 +65,21 @@ body {
   top: 50%;
   color: grey;
 }
+
 .owl-nav i {
   font-size: 52px;
 }
+
 .owl-nav .owl-prev {
   left: -30px;
 }
+
 .owl-nav .owl-next {
   right: -20px;
 }
 
 .container {
-   background-color: #ECECE8;
+  background-color: #ECECE8;
 }
 
 .modalImage {
@@ -89,4 +96,68 @@ body {
 
 .modal-footer {
   border: 0px;
+}
+
+.retailer {}
+
+.retailerInfo {
+  padding: 4px 0 10px 10px;
+  vertical-align: top;
+  color: #828383;
+}
+
+.retailerName {
+  font-size: 14px;
+  width: 280px;
+  padding-left: 24px;
+}
+
+.retailerPhone {
+  width: 160px;
+}
+
+.retailerAddress {
+  width: 240px;
+}
+
+.retailerState {
+  font-size: 13px;
+  padding: 6px 10px 6px 10px;
+  color: #626363;
+}
+
+.retailerStateRow {
+  background: #DCDCD8
+}
+
+.pageTitle {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pageContent {
+  font-size: 12px;
+}
+
+.contactContent {
+  font-size: 13px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.icons {
+  text-align: center;
+  font-size: 15px;
+}
+
+.centered {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
 }
