@@ -1,8 +1,12 @@
+html {
+  background-color: rgb(236, 236, 232);
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
   color: rgb(130, 131, 131);
-  background-color: rgb(236,236,232);
+  background-color: rgb(236, 236, 232);
 }
 
 .text {
